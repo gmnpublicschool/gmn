@@ -50,12 +50,12 @@ function Footer() {
                     <h3 className="text-primary mb-4">Quick Links</h3>
                     <div className="d-flex flex-column justify-content-start">
                         <Link className="text-white mb-2" to="/gmn" ><i className="fa fa-angle-right mr-2"></i>Home</Link>
-                        <Link className="text-white mb-2" to="/classes" ><i className="fa fa-angle-right mr-2"></i>Our Classes</Link>
-                        <Link className="text-white mb-2" to="/teachers" ><i className="fa fa-angle-right mr-2"></i>Our Teachers</Link>
-                        <Link className="text-white mb-2" to="/gallery" ><i className="fa fa-angle-right mr-2"></i>Our Gallery</Link>
+                        <Link className="text-white mb-2" to="/gmn/classes" ><i className="fa fa-angle-right mr-2"></i>Our Classes</Link>
+                        <Link className="text-white mb-2" to="/gmn/teachers" ><i className="fa fa-angle-right mr-2"></i>Our Teachers</Link>
+                        <Link className="text-white mb-2" to="/gmn/gallery" ><i className="fa fa-angle-right mr-2"></i>Our Gallery</Link>
                         {/* <Link className="text-white mb-2" to="/blog" ><i className="fa fa-angle-right mr-2"></i>Our Blog</Link> */}
-                        <Link className="text-white mb-2" to="/about" ><i className="fa fa-angle-right mr-2"></i>About Us</Link>
-                        <Link className="text-white" to="/contact" ><i className="fa fa-angle-right mr-2"></i>Contact Us</Link>
+                        <Link className="text-white mb-2" to="/gmn/about" ><i className="fa fa-angle-right mr-2"></i>About Us</Link>
+                        <Link className="text-white" to="/gmn/contact" ><i className="fa fa-angle-right mr-2"></i>Contact Us</Link>
                     </div>
                 </div>
             </div>

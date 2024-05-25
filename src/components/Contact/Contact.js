@@ -1,4 +1,5 @@
 import Banner from './../../common/Banner/Banner';
+import ContactForm from './../../common/ContactForm/ContactForm';
 function Contact() {
     return ( 
         <>
@@ -18,7 +19,7 @@ function Contact() {
                     <div className="row">
                         <div className="col-lg-7 mb-5">
                             <div className="contact-form">
-                                <div id="success"></div>
+                                {/* <div id="success"></div>
                                     <form name="sentMessage" id="contactForm" novalidate="novalidate">
                                         <div className="control-group">
                                             <input type="text" className="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
@@ -41,7 +42,8 @@ function Contact() {
                                             Send Message
                                         </button>
                                     </div>
-                                </form>
+                                </form> */}
+                                <ContactForm />
                             </div>
                         </div>
                         <div className="col-lg-5 mb-5">
