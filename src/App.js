@@ -17,11 +17,11 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/gmn" element={<Home />} />
-          <Route path="/gmn/classes" element={<Classes />} />
-          <Route path="/gmn/teachers" element={<Teachers />} />
-          <Route path="/gmn/gallery" element={<Gallery />} />
-          <Route path="/gmn/about" element={<About />} />
-          <Route path="/gmn/contact" element={<Contact />} />
+          <Route path="/classes" element={<Classes />} />
+          <Route path="/teachers" element={<Teachers />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>
