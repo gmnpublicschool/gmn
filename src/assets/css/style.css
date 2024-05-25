@@ -6373,7 +6373,7 @@
   }
   
   .bg-secondary {
-    background-color: #00394f !important;
+    background-color: #000 !important;
   }
   
   a.bg-secondary:hover, a.bg-secondary:focus,
@@ -9533,7 +9533,10 @@
   }
   
   .text-primary {
-    color: #17a2b8 !important;
+    background: linear-gradient(rgb(98, 39, 116) 0%, rgb(197, 51, 100) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   
   a.text-primary:hover, a.text-primary:focus {
@@ -9883,6 +9886,21 @@
     text-fill-color: transparent;
     font-size: 24px;
     font-weight: bold;
+  }
+  .social_media_cont{
+    width: 40px;
+    height: 40px;
+  }
+
+  .social_media_cont.btn_outline_primary {
+    color: rgb(98, 39, 116);
+    border-color: rgb(98, 39, 116);
+  }
+  
+  .social_media_cont.btn_outline_primary:hover {
+    color: #fff;
+    background-color: rgb(98, 39, 116);
+    border-color: rgb(98, 39, 116);
   }
   
   @media screen and (orientation: landscape) {

@@ -1,4 +1,5 @@
 import bannerImg from './../../assets/img/header.png';
+import Blog from './../../components/Blog/Blog';
 function Home() {
     return ( 
         <>
@@ -13,58 +14,123 @@ function Home() {
                         <p className="text-white mb-4">
                             At Gyan Mala Nirmal Public School, we are committed to providing an environment where students thrive academically, socially, and emotionally. Our holistic approach to education ensures that every child receives the personalized attention they need to succeed.
                         </p>
-                        <a href="" className="btn btn-secondary mt-1 py-3 px-5">Learn More</a>
+                        {/* <a href="" className="btn btn-secondary mt-1 py-3 px-5">Learn More</a> */}
                     </div>
                     <div className="bannerImgGmnCont col-lg-6 text-center text-lg-right">
                         <img className="img-fluid my-5 bannerImgGmn" src={bannerImg} alt="" />
                     </div>
                 </div>
             </div>
-
-            {/* <div id="carouselExampleCaptions" className="carousel slide">
-                <div className="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            {/* Facilities Start */}
+            <div class="container-fluid pt-5">
+                <div class="container pb-3">
+                    <div class="row">
+                    <div class="col-lg-4 col-md-6 pb-1">
+                        <div
+                        class="d-flex bg-light shadow-sm border-top rounded mb-4"
+                        style={{padding: '30px'}}
+                        >
+                        <i
+                            class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"
+                        ></i>
+                        <div class="pl-4">
+                            <h4>Play Ground</h4>
+                            <p class="m-0">
+                            Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
+                            lorem amet elitr vero...
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pb-1">
+                        <div
+                        class="d-flex bg-light shadow-sm border-top rounded mb-4"
+                        style={{padding: '30px'}}
+                        >
+                        <i
+                            class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"
+                        ></i>
+                        <div class="pl-4">
+                            <h4>Music and Dance</h4>
+                            <p class="m-0">
+                            Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
+                            lorem amet elitr vero...
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pb-1">
+                        <div
+                        class="d-flex bg-light shadow-sm border-top rounded mb-4"
+                        style={{padding: '30px'}}
+                        >
+                        <i
+                            class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"
+                        ></i>
+                        <div class="pl-4">
+                            <h4>Arts and Crafts</h4>
+                            <p class="m-0">
+                            Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
+                            lorem amet elitr vero...
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pb-1">
+                        <div
+                        class="d-flex bg-light shadow-sm border-top rounded mb-4"
+                        style={{padding: '30px'}}
+                        >
+                        <i
+                            class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"
+                        ></i>
+                        <div class="pl-4">
+                            <h4>Safe Transportation</h4>
+                            <p class="m-0">
+                            Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
+                            lorem amet elitr vero...
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pb-1">
+                        <div
+                        class="d-flex bg-light shadow-sm border-top rounded mb-4"
+                        style={{padding: '30px'}}
+                        >
+                        <i
+                            class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"
+                        ></i>
+                        <div class="pl-4">
+                            <h4>Healthy food</h4>
+                            <p class="m-0">
+                            Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
+                            lorem amet elitr vero...
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pb-1">
+                        <div
+                        class="d-flex bg-light shadow-sm border-top rounded mb-4"
+                        style={{padding: '30px'}}
+                        >
+                        <i
+                            class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"
+                        ></i>
+                        <div class="pl-4">
+                            <h4>Educational Tour</h4>
+                            <p class="m-0">
+                            Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero
+                            lorem amet elitr vero...
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src="https://codingyaar.com/wp-content/uploads/dark-flowers-1.png" className="d-block w-100" alt="..." />
-                        <div className="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
-                            <h2 className="bg-dark bg-opacity-50 py-2 px-4">First slide label</h2>
-                            <p className="bg-dark bg-opacity-50 py-2 px-4">Some representative placeholder content for the first
-                            slide.</p>
-                            <a href="#" className="btn btn-outline-light px-4 py-2 rounded-0">Learn More</a>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="https://codingyaar.com/wp-content/uploads/dark-flowers-2.png" className="d-block w-100" alt="..." />
-                        <div className="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0 ">
-                            <h2 className="bg-dark bg-opacity-50 py-2 px-4">Second slide label</h2>
-                            <p className="bg-dark bg-opacity-50 py-2 px-4">Some representative placeholder content for the second
-                            slide.</p>
-                            <a href="#" className="btn btn-outline-light px-4 py-2 rounded-0">Learn More</a>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="https://codingyaar.com/wp-content/uploads/dark-flowers-3.png" className="d-block w-100" alt="..." />
-                        <div className="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
-                            <h2 className="bg-dark bg-opacity-50 py-2 px-4">Third slide label</h2>
-                            <p className="bg-dark bg-opacity-50 py-2 px-4">Some representative placeholder content for the third
-                            slide.</p>
-                            <a href="#" className="btn btn-outline-light px-4 py-2 rounded-0">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div> */}
+            </div>
+            {/* Facilities Start */}
         </>
      );
 }
