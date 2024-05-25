@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import axios from 'axios';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
+  const form = useRef();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -42,30 +44,23 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const errors = validateForm();
-    setFormErrors(errors);
+    e.preventDefault();
 
-    if (Object.keys(errors).length > 0) {
-      return;
-    }
-
-    setIsSubmitting(true);
-    setSuccessMessage('');
-    setErrorMessage('');
-
-    try {
-      const response = await axios.post('/contact.php', formData);
-      if (response.status === 200) {
-        setSuccessMessage('Your message has been sent.');
-        setFormData({ name: '', email: '', subject: '', message: '' });
-      } else {
-        setErrorMessage('Sorry, it seems that our mail server is not responding. Please try again later!');
-      }
-    } catch (error) {
-      setErrorMessage('Sorry, it seems that our mail server is not responding. Please try again later!');
-    } finally {
-      setIsSubmitting(false);
-    }
+    emailjs
+      .sendForm('service_r9v7leg', 'template_0rtyevi', form.current, {
+        publicKey: 'XAgemPXSHST71EBim',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setSuccessMessage("You data have sended To G. M. N. Public school");
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          setErrorMessage(error.text);
+        }
+      );
+      e.target.reset();
   };
 
   return (
@@ -74,7 +69,7 @@ const ContactForm = () => {
         {successMessage && <div className="alert alert-success">{successMessage}</div>}
         {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
       </div>
-      <form name="sentMessage" id="contactForm" noValidate="novalidate" onSubmit={handleSubmit}>
+      <form ref={form} name="sentMessage" id="contactForm" noValidate="novalidate" onSubmit={handleSubmit}>
         <div className="control-group">
           <input
             type="text"
@@ -82,12 +77,26 @@ const ContactForm = () => {
             id="name"
             name="name"
             placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
+            // value={formData.name}
+            // onChange={handleChange}
             required
             data-validation-required-message="Please enter your name"
           />
           <p className="help-block text-danger">{formErrors.name}</p>
+        </div>
+        <div className="control-group">
+          <input
+            type="text"
+            className="form-control"
+            id="mobile"
+            name="mobile"
+            placeholder="Your mobile No."
+            // value={formData.name}
+            // onChange={handleChange}
+            required
+            data-validation-required-message="Please enter your mobile No."
+          />
+          <p className="help-block text-danger">{formErrors.mobile}</p>
         </div>
         <div className="control-group">
           <input
@@ -96,8 +105,8 @@ const ContactForm = () => {
             id="email"
             name="email"
             placeholder="Your Email"
-            value={formData.email}
-            onChange={handleChange}
+            // value={formData.email}
+            // onChange={handleChange}
             required
             data-validation-required-message="Please enter your email"
           />
@@ -110,8 +119,8 @@ const ContactForm = () => {
             id="subject"
             name="subject"
             placeholder="Subject"
-            value={formData.subject}
-            onChange={handleChange}
+            // value={formData.subject}
+            // onChange={handleChange}
             required
             data-validation-required-message="Please enter a subject"
           />
@@ -124,8 +133,8 @@ const ContactForm = () => {
             id="message"
             name="message"
             placeholder="Message"
-            value={formData.message}
-            onChange={handleChange}
+            // value={formData.message}
+            // onChange={handleChange}
             required
             data-validation-required-message="Please enter your message"
           />
