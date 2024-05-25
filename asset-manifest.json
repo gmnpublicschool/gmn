@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/gmn/static/css/main.1943c03c.css",
-    "main.js": "/gmn/static/js/main.b76001c5.js",
+    "main.css": "/gmn/static/css/main.c14bb1c9.css",
+    "main.js": "/gmn/static/js/main.f86cec79.js",
+    "static/media/Flaticon.svg": "/gmn/static/media/Flaticon.b38aaece6592f206b729.svg",
     "static/media/header.png": "/gmn/static/media/header.7a369f063fe27a27505d.png",
     "static/media/gmn_logo3.png": "/gmn/static/media/gmn_logo3.8f7512996da748fa82df.png",
+    "static/media/Flaticon.ttf": "/gmn/static/media/Flaticon.cddec782f4d82e89ec08.ttf",
+    "static/media/Flaticon.woff": "/gmn/static/media/Flaticon.8f6af0e6aa0cfaf03892.woff",
+    "static/media/Flaticon.woff2": "/gmn/static/media/Flaticon.5594f9f6d4917694d250.woff2",
     "index.html": "/gmn/index.html",
-    "main.1943c03c.css.map": "/gmn/static/css/main.1943c03c.css.map",
-    "main.b76001c5.js.map": "/gmn/static/js/main.b76001c5.js.map"
+    "main.c14bb1c9.css.map": "/gmn/static/css/main.c14bb1c9.css.map",
+    "main.f86cec79.js.map": "/gmn/static/js/main.f86cec79.js.map"
   },
   "entrypoints": [
-    "static/css/main.1943c03c.css",
-    "static/js/main.b76001c5.js"
+    "static/css/main.c14bb1c9.css",
+    "static/js/main.f86cec79.js"
   ]
 }
