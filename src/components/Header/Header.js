@@ -26,7 +26,7 @@ function Header() {
               
               <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse" >
                 <div className="navbar-nav font-weight-bold ml-auto py-0">
-                  <NavLink to="/" className="nav-item nav-link" activeClassName="active">Home</NavLink>
+                  <NavLink to="/gmn" className="nav-item nav-link" activeClassName="active">Home</NavLink>
                   <NavLink to="/classes" className="nav-item nav-link" activeClassName="active">Classes</NavLink>
                   <NavLink to="/teachers" className="nav-item nav-link" activeClassName="active">Teachers</NavLink>
                   <NavLink to="/gallery" className="nav-item nav-link" activeClassName="active">Gallery</NavLink>
