@@ -17,7 +17,7 @@ function Header() {
 
               <div className="compnayName d-flex flex-column justify-content-center align-items-center">
                 <p className="m-0">GYAN MALA NIRMAL PUBLIC SCHOOL</p>
-                <p className="m-0">Pachna, Sheikhpura, Bihar 81105</p>
+                {/* <p className="m-0">Pachna, Sheikhpura, Bihar 81105</p> */}
               </div>
 
               <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" >

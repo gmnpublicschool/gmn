@@ -3,8 +3,8 @@ import Blog from './../../components/Blog/Blog';
 function Home() {
     return ( 
         <>
-            <div className="bg-gmn container-fluid px-0 px-md-5 mb-5">
-                <div className="row align-items-center px-3">
+            <div className="fistFoldBanner bg-gmn container-fluid px-0 px-md-5 mb-5">
+                <div className="row align-items-center px-3 py-4 m-0">
                     <div className="col-lg-6 text-center text-lg-left">
                         
                         <h1 className="display-4 font-weight-bold text-white">
@@ -17,7 +17,7 @@ function Home() {
                         {/* <a href="" className="btn btn-secondary mt-1 py-3 px-5">Learn More</a> */}
                     </div>
                     <div className="bannerImgGmnCont col-lg-6 text-center text-lg-right">
-                        <img className="img-fluid my-5 bannerImgGmn" src={bannerImg} alt="" />
+                        <img className="img-fluid bannerImgGmn" src={bannerImg} alt="" />
                     </div>
                 </div>
             </div>

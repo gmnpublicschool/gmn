@@ -532,7 +532,7 @@
   }
 
   .bannerImgGmnCont .bannerImgGmn{
-    height: calc(100vh - 180px);
+    max-width: 410px;
   }
   
   .img-thumbnail {
@@ -9891,6 +9891,9 @@
     font-size: 24px;
     font-weight: bold;
   }
+  .fistFoldBanner {
+
+  }
   .social_media_cont{
     width: 40px;
     height: 40px;
@@ -9910,6 +9913,22 @@
   @media screen and (orientation: landscape) {
     .carousel img {
       height: 100vh;
+    }
+  }
+
+  @media(max-width : 767px){
+    .navbar-brand{
+      margin-right: 0px !important;
+    }
+    .compnayName{
+      max-width: calc(100% - 175px);
+      text-align: center;
+    }
+    .compnayName p{
+      font-size: 14px;
+    }
+    .bannerImgGmnCont .bannerImgGmn{
+      max-width: 315px;
     }
   }
   
