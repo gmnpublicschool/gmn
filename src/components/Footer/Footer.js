@@ -4,7 +4,7 @@ import logo from "./../../assets/img/gmn_logo3.png";
 
 function Footer() {
     return ( 
-        <div className="container-fluid bg-secondary text-white mt-5 py-1 px-sm-3 px-md-5" >
+        <div className="container-fluid bg_secondary text-white mt-5 py-1 px-sm-3 px-md-5" >
             <div className="row pt-3">
                 <div className="col-lg-4 col-md-6 mb-2 pr-5">
                     <a href="" className="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0" style={{fontSize: '40px; line-height: 40px'}} >
